@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MotivateKiki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kck-RW-tUi" userLabel="backgroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9QE-nr-mZE" userLabel="quoteImageView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9QE-nr-mZE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2HP-ab-r8r"/>
+                            <constraint firstAttribute="trailing" secondItem="kck-RW-tUi" secondAttribute="trailing" id="5ue-Zd-sR0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9QE-nr-mZE" secondAttribute="bottom" id="79m-8e-Hhb"/>
+                            <constraint firstItem="kck-RW-tUi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7rE-3V-mEc"/>
+                            <constraint firstItem="kck-RW-tUi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="80Q-gI-tsP"/>
+                            <constraint firstAttribute="bottom" secondItem="kck-RW-tUi" secondAttribute="bottom" id="mgB-8B-SQ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9QE-nr-mZE" secondAttribute="trailing" id="ozc-Ce-1O7"/>
+                            <constraint firstItem="9QE-nr-mZE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zKy-D9-zOA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="kck-RW-tUi" id="cTQ-A9-JdK"/>
+                        <outlet property="quoteImageView" destination="9QE-nr-mZE" id="KeV-dL-9N3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
